@@ -1,0 +1,33 @@
+@import "../../scss/base";
+
+.appBg {
+    height: 100vh;
+    @include d_xyCenter;
+
+    .appContent {
+        background-image: var(--gradientOne);
+        border-radius: 8px;
+        text-align: center;
+        padding: 6rem 2rem;
+        h1{
+            @extend %headingText;
+        }
+        .subContent{
+            margin-top: 2.5rem;
+            @include d_cxCenter;
+            p{
+                @extend %messageText;
+            }
+            button{
+                margin-top: 1rem;
+                @extend %btnElement;
+                cursor: pointer;
+            }
+            span{
+                margin-top: .8rem;
+                display: inline-block;
+                @extend %spantext;
+            }
+        }
+    }
+}
